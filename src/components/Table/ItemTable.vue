@@ -5,8 +5,8 @@
             <div @click="$emit('star')" class="h-8 w-8 duration-300 transition ml-2 text-gray-400 hover:bg-gray-100 items-center justify-center flex rounded-full cursor-pointer" :class="[{'text-yellow-500':starred}]"><i :class="`bx bx${starred ? 's' : ''}-star`" ></i></div>
             <div @click="$emit('save')" class="h-8 w-8 duration-300 transition ml-2 text-gray-400 hover:bg-gray-100 items-center justify-center flex rounded-full cursor-pointer" :class="[{'text-indigo-500':saved}]"><i :class="`bx bx${saved ? 's' : ''}-bookmark`"></i></div>
         </div>
-        <div class="text-sm ml-5 text-gray-700" :class="[{'font-semibold':!read}]">
-            {{ user }}
+        <div style="min-width: 10rem" class="text-sm ml-5 truncate text-gray-700" :class="[{'font-semibold':!read}]">
+            <span>{{ user }}</span>
         </div>
         <div class="text-sm ml-10 text-gray-700 truncate overflow-auto" :class="[{'font-semibold':!read}]">
             {{ message }}
