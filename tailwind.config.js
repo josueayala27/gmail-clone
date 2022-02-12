@@ -1,16 +1,18 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  content: ["./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",],
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif']
+      sans: [
+        'Inter',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Apple Color Emoji',
+        'Helvetica Neue',
+        'sans-serif',
+      ],
     },
     extend: {},
-  },
-  variants: {
-    extend: {
-      padding: ['hover', 'focus'],
-    },
   },
   plugins: [],
 }
