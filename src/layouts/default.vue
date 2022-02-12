@@ -1,11 +1,14 @@
 <template>
-   <div class="h-screen flex justify-center items-center w-full">
-     <p>Vite App</p>
+   <div>
+     <nuxt-router />
    </div>
 </template>
 
 <script>
+import Navbar from '../components/layout/Navbar.vue'
+
 export default {
+  components: { Navbar },
 }
 </script>
 
