@@ -1,37 +1,21 @@
-<template>
-  <div id="app" class="flex flex-col h-screen">
-    <Navbar />
-    <div class="flex h-full">
-      <SideBar />
-      <div class="flex-auto overflow-auto">
-        <router-view/>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script>
-import SideBar from '@/components/SideBar.vue'
-import Navbar from '@/components/Navbar.vue'
-import { mapState } from 'vuex'
-
-export default {
-  components: {
-    SideBar,
-    Navbar
-  },
-  computed: {
-    ...mapState(['theme'])
-  },
-  mounted() {
-    /* console.log(this.$route.path) */
-  },
-}
+<script setup>
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<style lang="less">
+<template>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Vue 3 + Vite" />
+</template>
+
+<style>
 #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
