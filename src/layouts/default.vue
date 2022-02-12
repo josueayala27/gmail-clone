@@ -1,6 +1,6 @@
 <template>
    <div>
-     <nuxt-router />
+     <router-view  />
    </div>
 </template>
 
