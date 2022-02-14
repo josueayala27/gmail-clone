@@ -4,7 +4,14 @@
      <div class="flex h-full">
        <div class="p-3 w-[16rem] bg-purple-500"></div>
        <div class="p-3 w-[22rem] bg-pink-500"></div>
-       <main class="flex-1 bg-yellow-500 overflow-hidden">
+       <main class="flex-1 bg-yellow-500 flex-row overflow-hidden">
+         <div class="p-3 w-full flex">
+           <p>Today, 11:02 AM</p>
+           <Icon name="reply" />
+           <Icon name="star" />
+           <Icon name="printer" />
+           <Icon class="hover:text-red-500" name="dots-vertical" />
+         </div>
          <router-view class="container mx-auto" />
        </main>
      </div>
@@ -13,9 +20,10 @@
 
 <script>
 import Navbar from '../components/layout/Navbar.vue'
+import Icon from '../components/ui/Icon.vue'
 
 export default {
-  components: { Navbar },
+  components: { Navbar, Icon },
 }
 </script>
 
