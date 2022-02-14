@@ -2,23 +2,30 @@
   <div class="flex flex-col h-screen">
     <Navbar></Navbar>
     <div class="flex h-full">
-      <div class="p-3 w-[16rem] bg-purple-500"></div>
-      <div class="p-3 w-[22rem] bg-pink-500"></div>
-      <main class="flex-1 bg-yellow-500 flex-row overflow-hidden">
-        <div class="p-3 w-full flex items-center">
+      <div class="p-3 w-[16rem] border-r"></div>
+      <div class="p-3 w-[22rem] border-r"></div>
+      <main class="flex-1 flex-row overflow-hidden">
+        <div class="p-3 w-full flex items-center justify-between">
           <div class="flex gap-3 items-center">
             <Avatar
-              src="https://images.unsplash.com/photo-1644760748646-9cbe0f914c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+              src="https://images.unsplash.com/photo-1644775110946-86c566b53fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=713&q=80"
             />
-            <p>Josué Ayala</p>
+            <p>Mariyam Gucci</p>
           </div>
-          <p>Today, 11:02 AM</p>
-          <Icon name="reply" />
-          <Icon name="star" />
-          <Icon name="printer" />
-          <Icon class="hover:text-red-500" name="dots-vertical" />
+          <div class="flex items-center gap-x-3">
+            <p>Today, 11:02 AM</p>
+            <div class="flex gap-x-3">
+              <Icon class="cursor-pointer hover:text-gray-600" name="reply" />
+              <Icon class="cursor-pointer hover:text-gray-600" name="star" />
+              <Icon class="cursor-pointer hover:text-gray-600" name="printer" />
+              <Icon
+                class="cursor-pointer hover:text-gray-600"
+                name="dots-vertical"
+              />
+            </div>
+          </div>
         </div>
-        <router-view class="container mx-auto" />
+        <router-view class="container mx-auto p-3" />
       </main>
     </div>
   </div>
@@ -36,4 +43,5 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 </style>

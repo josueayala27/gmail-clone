@@ -10,6 +10,7 @@ module.exports = {
         "Helvetica Neue",
         "sans-serif",
       ],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {},
   },

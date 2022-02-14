@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 bg-red-400">Notifications</div>
+  <div class="p-3 border-b">Notifications</div>
 </template>
 
 <script>
