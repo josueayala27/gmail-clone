@@ -11,6 +11,7 @@ module.exports = {
         "sans-serif",
       ],
       montserrat: ["Montserrat", "sans-serif"],
+      code: ["Source Code Pro", "monospace"],
     },
     extend: {},
   },
