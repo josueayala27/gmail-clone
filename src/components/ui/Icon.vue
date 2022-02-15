@@ -12,6 +12,9 @@ import inbox from "../../assets/icons/inbox.svg?raw";
 import pencil from "../../assets/icons/pencil.svg?raw";
 import trash from "../../assets/icons/trash.svg?raw";
 import informationCircle from "../../assets/icons/information-circle.svg?raw";
+import annotation from "../../assets/icons/annotation.svg?raw";
+import bell from "../../assets/icons/bell.svg?raw";
+import exclamation from "../../assets/icons/exclamation.svg?raw";
 
 export default {
   name: "IconComponent",
@@ -21,12 +24,15 @@ export default {
         star,
         reply,
         printer,
+        bell,
         "dots-vertical": dotsVertical,
         inbox,
         "paper-airplane": paperAirplane,
         pencil,
         "information-circle": informationCircle,
         trash,
+        annotation,
+        exclamation,
       },
     };
   },

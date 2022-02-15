@@ -5,33 +5,39 @@
       <div class="w-[16rem] border-r text-sm">
         <p class="text-gray-400 font-semibold text-sm select-none p-3">MENU</p>
         <div
-          class="flex cursor-pointer items-center hover:bg-gray-100 p-3 border-r-[.18rem] border-red-500 text-red-500 gap-x-2"
+          class="flex cursor-pointer justify-between items-center hover:bg-gray-100 p-3 border-r-[.18rem] border-red-500 text-red-500 gap-x-2"
         >
-          <Icon name="inbox" />
-          <p class="font-semibold">Inbox</p>
+          <div class="flex gap-x-2">
+            <Icon name="inbox" />
+            <p class="font-semibold">Inbox</p>
+          </div>
+          <p class="font-semibold">1</p>
         </div>
         <div
           class="flex cursor-pointer items-center hover:bg-gray-100 p-3 gap-x-2"
         >
-          <Icon class="font-light" name="star" />
-          <p class="font-semibold">Starred</p>
+          <Icon class="font-light" name="bell" />
+          <p class="font-semibold">Notifications</p>
         </div>
         <div
           class="flex cursor-pointer items-center hover:bg-gray-100 p-3 gap-x-2"
         >
-          <Icon name="paper-airplane" />
+          <Icon name="annotation" />
           <p class="font-semibold">Sent</p>
         </div>
         <div
-          class="flex cursor-pointer items-center hover:bg-gray-100 p-3 gap-x-2"
+          class="flex justify-between cursor-pointer items-center hover:bg-gray-100 p-3 gap-x-2"
         >
-          <Icon name="pencil" />
-          <p class="font-semibold">Drafts</p>
+          <div class="flex gap-x-2">
+            <Icon name="pencil" />
+            <p class="font-semibold">Drafts</p>
+          </div>
+          <p class="font-semibold text-gray-400">4</p>
         </div>
         <div
           class="flex cursor-pointer items-center hover:bg-gray-100 p-3 gap-x-2"
         >
-          <Icon name="information-circle" />
+          <Icon name="exclamation" />
           <p class="font-semibold">Spam</p>
         </div>
         <div
@@ -132,13 +138,14 @@
             <Avatar
               src="https://images.unsplash.com/photo-1644775110946-86c566b53fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=713&q=80"
             />
-            <p>Mariyam Gucci</p>
+            <p>Mariyam Inoguchi</p>
           </div>
-          <div class="flex items-center gap-x-3">
+          <div class="flex items-center gap-x-5">
             <p>Today, 11:02 AM</p>
-            <div class="flex gap-x-3">
+            <div class="border-r h-[2rem]"></div>
+            <div class="flex gap-x-5">
               <Icon class="cursor-pointer hover:text-gray-600" name="reply" />
-              <Icon class="cursor-pointer hover:text-gray-600" name="star" />
+              <Icon class="cursor-pointer hover:text-gray-600" name="bell" />
               <Icon class="cursor-pointer hover:text-gray-600" name="printer" />
               <Icon
                 class="cursor-pointer hover:text-gray-600"

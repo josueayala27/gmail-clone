@@ -26,7 +26,7 @@
     >
       <p>--</p>
       <p>Kind regards,</p>
-      <p>Mariyam Gucci</p>
+      <p>Mariyam Inoguchi</p>
     </div>
     <div class="border-t my-5"></div>
     <!--  -->
