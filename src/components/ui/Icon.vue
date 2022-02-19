@@ -16,6 +16,8 @@ import annotation from "../../assets/icons/annotation.svg?raw";
 import bell from "../../assets/icons/bell.svg?raw";
 import exclamation from "../../assets/icons/exclamation.svg?raw";
 import plusSm from "../../assets/icons/plus-sm.svg?raw";
+import user from "../../assets/icons/user.svg?raw";
+import briefcase from "../../assets/icons/briefcase.svg?raw";
 
 export default {
   name: "IconComponent",
@@ -35,6 +37,8 @@ export default {
         annotation,
         exclamation,
         "plus-sm": plusSm,
+        user,
+        briefcase,
       },
     };
   },

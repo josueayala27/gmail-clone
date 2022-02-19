@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-red-500 hover:bg-red-600 p-3 text-white rounded-lg flex justify-center items-center gap-2"
+    class="bg-red-500 outline-none hover:bg-red-600 p-3 text-white rounded-lg flex justify-center items-center gap-2"
     :class="[
       {
         'w-full': block,

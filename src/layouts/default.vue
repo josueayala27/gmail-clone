@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
     <div class="flex h-full">
-      <div class="w-[16rem] border-r text-sm max-h-screen" id="sidebar">
+      <div class="flex flex-col w-[16rem] border-r">
         <div class="p-3">
           <Button class="group">
             <Icon
@@ -11,137 +11,160 @@
             Compose
           </Button>
         </div>
-        <p class="text-gray-400 font-semibold text-sm select-none p-3">MENU</p>
-        <div
-          class="flex cursor-pointer justify-between items-center hover:bg-gray-50 p-3 border-r-[.18rem] border-red-500 text-red-500 gap-x-2"
-        >
-          <div class="flex gap-x-2">
+        <div class="text-sm flex-1" id="sidebar">
+          <p class="text-gray-400 font-semibold text-sm select-none p-3">
+            MENU
+          </p>
+          <div
+            class="flex cursor-pointer justify-between items-center hover:bg-gray-50 p-3 border-r-[.18rem] border-red-500 text-red-500 gap-x-2"
+          >
+            <div class="flex gap-x-2">
+              <Icon name="inbox" />
+              <p class="font-semibold">Inbox</p>
+            </div>
+            <p class="font-semibold">1</p>
+          </div>
+          <div
+            class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <Icon class="font-light" name="bell" />
+            <p class="font-semibold">Notifications</p>
+          </div>
+          <div
+            class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <Icon name="annotation" />
+            <p class="font-semibold">Sent</p>
+          </div>
+          <div
+            class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <div class="flex gap-x-2">
+              <Icon name="pencil" />
+              <p class="font-semibold">Drafts</p>
+            </div>
+            <p class="font-semibold text-gray-400">4</p>
+          </div>
+          <div
+            class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <Icon name="exclamation" />
+            <p class="font-semibold">Spam</p>
+          </div>
+          <div
+            class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <Icon name="trash" />
+            <p class="font-semibold">Trash</p>
+          </div>
+          <p class="text-gray-400 font-semibold text-sm select-none p-3">
+            LABELS
+          </p>
+          <div
+            class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <Avatar
+              src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80"
+            />
+            <p class="font-semibold">Coding</p>
+          </div>
+          <div
+            class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <Avatar
+              src="https://pbs.twimg.com/profile_images/711985523062128640/cK6ji2TL_400x400.jpg"
+            />
+            <p class="font-semibold text-[#DA2826]">Youtube</p>
+          </div>
+          <p class="text-gray-400 font-semibold text-sm select-none p-3">
+            CHATS
+          </p>
+          <div
+            class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <div class="flex gap-x-2 items-center">
+              <Avatar
+                active
+                color="#EF4444"
+                src="https://ca.slack-edge.com/T0451DWPD-U01698U7X7V-4f00417757ed-72"
+              />
+              <p class="font-semibold">Josué Montano</p>
+            </div>
+            <div>
+              <Icon
+                class="cursor-pointer hover:text-gray-600"
+                name="dots-vertical"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <div class="flex gap-x-2 items-center">
+              <Avatar
+                active
+                src="https://ca.slack-edge.com/T0451DWPD-U01BLHD7CK0-49d34387eb9c-512"
+              />
+              <p class="font-semibold">Irvin Orantes</p>
+            </div>
+            <div>
+              <Icon
+                class="cursor-pointer hover:text-gray-600"
+                name="dots-vertical"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <div class="flex gap-x-2 items-center">
+              <Avatar
+                active
+                color="#FBBF24"
+                src="https://ca.slack-edge.com/T0451DWPD-U027LRM8E1F-1dd933044515-72"
+              />
+              <p class="font-semibold">Roberto Salmeron</p>
+            </div>
+            <div>
+              <Icon
+                class="cursor-pointer hover:text-gray-600"
+                name="dots-vertical"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
+          >
+            <div class="flex gap-x-2 items-center">
+              <Avatar
+                active
+                src="https://ca.slack-edge.com/T0451DWPD-U01BF9R5PBM-b90b01ddd65a-72"
+              />
+              <p class="font-semibold">Josué Ayala</p>
+            </div>
+            <div>
+              <Icon
+                class="cursor-pointer hover:text-gray-600"
+                name="dots-vertical"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="p-3 grid grid-cols-3 gap-3">
+          <div
+            class="cursor-pointer bg-red-100 p-3 rounded-lg text-red-600 w-full h-full flex justify-center"
+          >
             <Icon name="inbox" />
-            <p class="font-semibold">Inbox</p>
           </div>
-          <p class="font-semibold">1</p>
-        </div>
-        <div
-          class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <Icon class="font-light" name="bell" />
-          <p class="font-semibold">Notifications</p>
-        </div>
-        <div
-          class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <Icon name="annotation" />
-          <p class="font-semibold">Sent</p>
-        </div>
-        <div
-          class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <div class="flex gap-x-2">
-            <Icon name="pencil" />
-            <p class="font-semibold">Drafts</p>
+          <div
+            class="cursor-pointer hover:bg-gray-100 duration-300 p-3 rounded-lg text-black w-full h-full flex justify-center"
+          >
+            <Icon name="briefcase" />
           </div>
-          <p class="font-semibold text-gray-400">4</p>
-        </div>
-        <div
-          class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <Icon name="exclamation" />
-          <p class="font-semibold">Spam</p>
-        </div>
-        <div
-          class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <Icon name="trash" />
-          <p class="font-semibold">Trash</p>
-        </div>
-        <p class="text-gray-400 font-semibold text-sm select-none p-3">
-          LABELS
-        </p>
-        <div
-          class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <Avatar
-            src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80"
-          />
-          <p class="font-semibold">Coding</p>
-        </div>
-        <div
-          class="flex cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <Avatar
-            src="https://pbs.twimg.com/profile_images/711985523062128640/cK6ji2TL_400x400.jpg"
-          />
-          <p class="font-semibold text-[#DA2826]">Youtube</p>
-        </div>
-        <p class="text-gray-400 font-semibold text-sm select-none p-3">CHATS</p>
-        <div
-          class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <div class="flex gap-x-2 items-center">
-            <Avatar
-              active
-              color="#EF4444"
-              src="https://ca.slack-edge.com/T0451DWPD-U01698U7X7V-4f00417757ed-72"
-            />
-            <p class="font-semibold">Josué Montano</p>
-          </div>
-          <div>
-            <Icon
-              class="cursor-pointer hover:text-gray-600"
-              name="dots-vertical"
-            />
-          </div>
-        </div>
-        <div
-          class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <div class="flex gap-x-2 items-center">
-            <Avatar
-              active
-              src="https://ca.slack-edge.com/T0451DWPD-U01BLHD7CK0-49d34387eb9c-512"
-            />
-            <p class="font-semibold">Irvin Orantes</p>
-          </div>
-          <div>
-            <Icon
-              class="cursor-pointer hover:text-gray-600"
-              name="dots-vertical"
-            />
-          </div>
-        </div>
-        <div
-          class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <div class="flex gap-x-2 items-center">
-            <Avatar
-              active
-              color="#FBBF24"
-              src="https://ca.slack-edge.com/T0451DWPD-U027LRM8E1F-1dd933044515-72"
-            />
-            <p class="font-semibold">Roberto Salmeron</p>
-          </div>
-          <div>
-            <Icon
-              class="cursor-pointer hover:text-gray-600"
-              name="dots-vertical"
-            />
-          </div>
-        </div>
-        <div
-          class="flex justify-between cursor-pointer items-center hover:bg-gray-50 p-3 gap-x-2"
-        >
-          <div class="flex gap-x-2 items-center">
-            <Avatar
-              active
-              src="https://ca.slack-edge.com/T0451DWPD-U01BF9R5PBM-b90b01ddd65a-72"
-            />
-            <p class="font-semibold">Josué Ayala</p>
-          </div>
-          <div>
-            <Icon
-              class="cursor-pointer hover:text-gray-600"
-              name="dots-vertical"
-            />
+          <div
+            class="cursor-pointer hover:bg-gray-100 duration-300 p-3 rounded-lg text-black w-full h-full flex justify-center"
+          >
+            <Icon name="user" />
           </div>
         </div>
       </div>
