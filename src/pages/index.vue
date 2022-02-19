@@ -1,5 +1,5 @@
 <template>
-  <div class="mail">
+  <div class="mail overflow-auto">
     <h1 class="text-3xl font-bold">We're happy about our cooperation</h1>
     <div class="gap-3 flex flex-col mt-5 font-medium text-gray-500">
       <p>Hey Josué</p>
@@ -18,7 +18,7 @@
       </p>
       <p>
         The next month, we have planned to come to El Salvador 💕, from 1st to
-        5th, and would love to meet you. See you soon my friends!
+        5th, and would love to meet you. See you soon my friends! ✈️👌🍺
       </p>
     </div>
     <div
