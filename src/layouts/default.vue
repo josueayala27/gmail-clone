@@ -2,7 +2,15 @@
   <div class="flex flex-col h-screen">
     <div class="flex h-full">
       <div class="w-[16rem] border-r text-sm max-h-screen" id="sidebar">
-        <Button>Compose</Button>
+        <div class="p-3">
+          <Button class="group">
+            <Icon
+              name="plus-sm"
+              class="group-hover:rotate-90 transform duration-300"
+            />
+            Compose
+          </Button>
+        </div>
         <p class="text-gray-400 font-semibold text-sm select-none p-3">MENU</p>
         <div
           class="flex cursor-pointer justify-between items-center hover:bg-gray-50 p-3 border-r-[.18rem] border-red-500 text-red-500 gap-x-2"

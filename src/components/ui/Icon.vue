@@ -15,6 +15,7 @@ import informationCircle from "../../assets/icons/information-circle.svg?raw";
 import annotation from "../../assets/icons/annotation.svg?raw";
 import bell from "../../assets/icons/bell.svg?raw";
 import exclamation from "../../assets/icons/exclamation.svg?raw";
+import plusSm from "../../assets/icons/plus-sm.svg?raw";
 
 export default {
   name: "IconComponent",
@@ -33,6 +34,7 @@ export default {
         trash,
         annotation,
         exclamation,
+        "plus-sm": plusSm,
       },
     };
   },
